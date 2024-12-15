@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Riley's Library</h2>
+      <ul>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+      </ul>
+      <div class="add-book-button">
+        <h4>ADD BOOK</h4>
+        <dialog class="add-book-modal">
+          <div class="modal-header">
+            <h3>Add Book</h3>
+          </div>
+          <div class="modal-content">
+            <form action="" class="add-book-form">
+              <div class="book-form">
+                <label for="name">Title </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="book-form">
+                <label for="author">Author </label>
+                <input type="author" name="author" id="author" required />
+              </div>
+              <div class="book-form">
+                <label for="pages">Page Count </label>
+                <input type="pages" name="pages" id="pages" required />
+              </div>
+              <div class="form-submit book-form">
+                <input
+                  class="book-form form-submit"
+                  type="submit"
+                  value="Add Book"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-close"><button autofocus>Close</button></div>
+        </dialog>
+        <span class="add-book-span"><img src="./icons/plus-circle.svg" /></span>
+      </div>
+    </div>
+
+    <div class="book-display">
+      <!--this div will be populated as books are added-->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

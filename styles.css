@@ -1,0 +1,170 @@
+:root {
+  background-color: antiquewhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 1px;
+  width: 100%;
+  height: 15vh;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.add-book-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-book-span {
+  cursor: pointer;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.add-book-span:hover {
+  transition: 0.9s;
+  transform: rotateY(180deg);
+}
+
+.book-display {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  /* align-items: center; */
+  gap: 15px;
+  top: 25px;
+  justify-content: center;
+  flex-wrap: wrap; /* wraps cards to new line*/
+}
+
+.book-display .card {
+  background-color: #f5f5f5;
+  text-align: center;
+  border: none;
+  border-left: 10px solid orange;
+  border-radius: 14px;
+  height: 200px;
+  width: 250px;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add-book-modal {
+  max-height: 60vh;
+  width: 60vw;
+  top: 50%; /*center*/
+  left: 50%; /*center*/
+  transform: translate(-50%, -50%); /*center*/
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-content {
+  align-content: center;
+  justify-items: center;
+  height: 90%;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close button {
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(56, 88, 149);
+  border: 1px solid lightgray;
+}
+.modal-close button:hover {
+  opacity: 0.8;
+}
+
+.add-book-modal::backdrop {
+  align-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.book-form {
+  padding: 10px;
+}
+
+.book-form input {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 5px;
+  height: 28px;
+  width: 100%;
+}
+
+.book-form input:focus {
+  outline: none !important; /*overrides all previous styling rules for that specific property on that element*/
+  border: 1px solid orange;
+  box-shadow: 0 0 10px #d2a926;
+}
+
+.form-submit .book-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-submit {
+  align-items: center !important;
+  box-shadow: none !important;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.form-submit:hover {
+  opacity: 0.8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto !important;
+  padding: auto !important;
+}
+
+.read-button {
+  min-width: 60%;
+  border-radius: 6px;
+  padding: 4px;
+  border: 1px solid lightgray;
+  background-color: rgb(56, 88, 149);
+  color: white;
+  cursor: pointer;
+}
+
+.read-button:hover {
+  opacity: 0.8;
+}
+
+.delete-button {
+  min-width: 60%;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  background-color: #c60c30;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  opacity: 0.8;
+}
